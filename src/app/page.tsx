@@ -1,14 +1,14 @@
 import { Slide } from "@/components/ui/slide";
-import { ArrowRight, Zap, Users, DollarSign } from "lucide-react";
+import { ArrowRight, Zap, DollarSign } from "lucide-react";
 
 export default function PitchDeck() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-emerald-50 via-white to-orange-50">
+    <main className="min-h-screen bg-gradient-to-br from-green-50 via-white to-amber-50">
       <nav className="fixed top-4 right-4 z-50 flex gap-4">
-        <a href="#pitch" className="px-4 py-2 text-sm bg-emerald-100 rounded-lg hover:bg-emerald-200">
+        <a href="#pitch" className="px-4 py-2 text-sm bg-green-100 rounded-lg hover:bg-green-200">
           Pitch
         </a>
-        <a href="#demo" className="px-4 py-2 text-sm bg-orange-100 rounded-lg hover:bg-orange-200">
+        <a href="#demo" className="px-4 py-2 text-sm bg-amber-100 rounded-lg hover:bg-amber-200">
           Demo
         </a>
       </nav>
@@ -26,7 +26,7 @@ export default function PitchDeck() {
           </p>
           <div className="flex items-center gap-4 text-xl text-slate-600">
             <span>jura4mal | 2026 | Грант заявка</span>
-            <Zap className="w-8 h-8 text-orange-500 animate-pulse" />
+            <Zap className="w-8 h-8 text-amber-500 animate-pulse" />
           </div>
         </Slide>
 
@@ -48,7 +48,7 @@ export default function PitchDeck() {
               <div className="text-7xl font-black gradient-text mb-4">
                 47 секунд
               </div>
-              <p className="text-2xl text-emerald-700 font-bold">
+              <p className="text-2xl text-green-700 font-bold">
                 Agentic решение
               </p>
             </div>
@@ -61,12 +61,12 @@ export default function PitchDeck() {
             AI-оркестр для вашего тела
           </h2>
           <div className="grid md:grid-cols-3 gap-8 text-2xl">
-            <div className="p-8 bg-emerald-50/50 rounded-2xl">
-              <h3 className="text-3xl font-bold text-emerald-700 mb-4">FitCursor</h3>
+            <div className="p-8 bg-green-50/50 rounded-2xl">
+              <h3 className="text-3xl font-bold text-green-700 mb-4">FitCursor</h3>
               <p>Генерация программ</p>
             </div>
-            <div className="p-8 bg-orange-50/50 rounded-2xl">
-              <h3 className="text-3xl font-bold text-orange-700 mb-4">BodyClaude</h3>
+            <div className="p-8 bg-amber-50/50 rounded-2xl">
+              <h3 className="text-3xl font-bold text-amber-700 mb-4">BodyClaude</h3>
               <p>Биометрия в реальном времени</p>
             </div>
             <div className="p-8 bg-slate-50/50 rounded-2xl">
@@ -83,7 +83,7 @@ export default function PitchDeck() {
           </h2>
           <div className="grid md:grid-cols-2 gap-12 text-xl">
             <div>
-              <h3 className="text-3xl font-bold text-emerald-600 mb-6">Frontend</h3>
+              <h3 className="text-3xl font-bold text-green-600 mb-6">Frontend</h3>
               <ul className="space-y-3 text-2xl">
                 <li>• React 19 + TanStack Router</li>
                 <li>• Tailwind + shadcn/ui</li>
@@ -91,7 +91,7 @@ export default function PitchDeck() {
               </ul>
             </div>
             <div>
-              <h3 className="text-3xl font-bold text-orange-600 mb-6">Backend</h3>
+              <h3 className="text-3xl font-bold text-amber-600 mb-6">Backend</h3>
               <ul className="space-y-3 text-2xl">
                 <li>• Yandex Cloud Serverless</li>
                 <li>• YandexGPT 4o API</li>
@@ -181,19 +181,19 @@ export default function PitchDeck() {
             Почему мы выигрываем
           </h2>
           <div className="overflow-x-auto">
-            <table className="text-xl border-collapse w-full">
+            <table className="text-xl border-collapse w-full bg-green-50">
               <thead>
-                <tr className="bg-emerald-100/50">
-                  <th>Feature</th>
-                  <th>Agentic</th>
-                  <th>MyFitnessPal</th>
-                  <th>Peloton</th>
+                <tr className="bg-green-100">
+                  <th className="p-4">Feature</th>
+                  <th className="p-4">Agentic</th>
+                  <th className="p-4">MyFitnessPal</th>
+                  <th className="p-4">Peloton</th>
                 </tr>
               </thead>
               <tbody>
-                <tr><td>AI Agents</td><td>✅ 3x</td><td>❌</td><td>❌</td></tr>
-                <tr><td>Biometrics</td><td>✅ RT</td><td>❌</td><td>❌</td></tr>
-                <tr><td>Speed</td><td>✅ 47s</td><td>❌</td><td>❌</td></tr>
+                <tr><td className="p-4">AI Agents</td><td className="p-4 font-bold">✅ 3x</td><td className="p-4">❌</td><td className="p-4">❌</td></tr>
+                <tr><td className="p-4">Biometrics</td><td className="p-4 font-bold">✅ RT</td><td className="p-4">❌</td><td className="p-4">❌</td></tr>
+                <tr><td className="p-4">Speed</td><td className="p-4 font-bold">✅ 47s</td><td className="p-4">❌</td><td className="p-4">❌</td></tr>
               </tbody>
             </table>
           </div>
@@ -214,11 +214,11 @@ export default function PitchDeck() {
               <div>🚀 $2.7M ARR (12 мес)</div>
             </div>
             <div className="flex flex-col md:flex-row gap-6 justify-center">
-              <a href="mailto:jura4mal@agenticfitness.ru" className="px-12 py-6 bg-gradient-to-r from-emerald-600 to-orange-600 text-white text-xl font-bold rounded-2xl hover:scale-105 transition-all">
-                <DollarSign className="inline mr-3" /> Грант заявка
-              </a>
-              <a href="/demo" className="px-12 py-6 border-4 border-emerald-200 bg-white text-emerald-700 text-xl font-bold rounded-2xl hover:bg-emerald-50">
-                Live Demo <ArrowRight className="inline ml-2" />
+              <a 
+                href="mailto:jura4mal@gmail.com" 
+                className="px-8 py-4 bg-green-600 text-white text-2xl rounded-xl hover:bg-green-700 flex items-center justify-center gap-2"
+              >
+                Связаться с нами <ArrowRight className="w-6 h-6" />
               </a>
             </div>
           </div>
